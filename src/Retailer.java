@@ -1,4 +1,4 @@
-public class Retailer{
+public class Retailer extends Wholesaler{
     int id;
     String name;
     int w_id;

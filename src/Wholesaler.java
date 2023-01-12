@@ -1,11 +1,11 @@
-public class Wholesaler{
+public class Wholesaler extends Products{
     int id;
     String name;
     int p_id;
     int stock;
     int price;
 
-
+    Wholesaler(){}
     Wholesaler(int w, String x, int y, int z, int d){
         this.id = w;
         this.name = x;
@@ -16,6 +16,8 @@ public class Wholesaler{
 
     public void addStock(int x){
         this.stock = this.stock + x;
+
+
     }
 
     public void display(){

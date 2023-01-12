@@ -4,6 +4,7 @@ public class Products{
     private int stock;
     private int price;
 
+    Products(){ }
     Products(int w, String x, int y, int z){
         this.id = w;
         this.name = x;
@@ -13,6 +14,10 @@ public class Products{
 
     public void reduce_stock(int x){
         this.stock = this.stock - x;
+    }
+
+    public void reduce_stock(Products p, int x){
+        p.stock = p.stock - x;
     }
 
     public void display(){
